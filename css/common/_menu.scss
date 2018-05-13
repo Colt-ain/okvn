@@ -1,0 +1,41 @@
+.bg-faded {
+  background-color: transparent;
+}
+.navbar {
+    padding: 0;
+}
+.navbar-nav .nav-item+.nav-item {
+  margin-left: 0rem;
+}
+.navbar-light .navbar-nav .nav-link {
+    padding: 0.8rem 1rem;
+    font-family: $main-font;
+    text-transform:uppercase;
+    font-weight: 900;
+    font-size:0.875rem;
+    color:$menu_link;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .active>.nav-link:focus, .navbar-light .navbar-nav .active>.nav-link:hover, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.active:focus, .navbar-light .navbar-nav .nav-link.active:hover, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.open:focus, .navbar-light .navbar-nav .nav-link.open:hover, .navbar-light .navbar-nav .open>.nav-link, .navbar-light .navbar-nav .open>.nav-link:focus, .navbar-light .navbar-nav .open>.nav-link:hover{
+	color:$menu_link_active;
+	background-color: $menu_link_bg_active;
+}
+.dropdown-menu {
+    margin: -1px 0 0 0;
+    border-radius: 0;
+}
+.dropdown-item {
+    padding: 0;
+    a {
+        font-family: $main-font;
+        font-size: 1rem;
+        color: $menu_link_dropdown;
+        padding: 3px 20px;
+        display: block;
+    }
+    a:hover {
+        text-decoration:none;
+    }
+}
+.navbar-toggler:hover, .navbar-toggler:focus{
+  outline:none;
+}

@@ -1,0 +1,96 @@
+/*==========  Desktop First Method  ==========*/
+body{
+    min-width: 300px;
+}
+.s900,.s1170,.s1080,.s672{
+	display:none;
+}
+@media only screen and (max-width : 1250px) {
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1170px) {
+.h1170{
+	display:none;
+}
+.s1170{
+	display:block;
+}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1080px) {
+.h1080{
+	display:none;
+}
+.s1080{
+	display:block;
+}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.footer-contacts {
+    text-align: center;
+    margin-top: 15px;
+}
+.footer-soc .soc-item {
+    display: inline-block;
+    float: none;
+}
+.footer-nav {
+    text-align: center;
+    margin-bottom: 15px;
+    .header{
+      text-align: center;      
+    }
+}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 901px) {
+.h900{
+	display:none;
+}
+.s900{
+	display:block;
+}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 800px) {
+}
+/* Small Devices, Tablets */
+
+@media only screen and (max-width : 767px) {
+.s768{
+    display: block!important;
+}
+.mmenu_header {
+    display: block;
+}
+.content{
+    padding-top:40px;
+}
+}
+
+@media only screen and (max-width : 672px) {
+.h672{
+	display:none;
+}
+.s672{
+	display:block;
+}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 544px) {
+.copy_block {
+    text-align: center;
+}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

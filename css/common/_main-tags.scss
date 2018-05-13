@@ -1,0 +1,44 @@
+body {
+    font-size: 14px;
+    color: $text-font;
+    font-family: $text-font;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color:$link-color;
+}
+a:focus, a:active {
+    text-decoration: none;
+    outline: none;
+}
+p a {
+    text-decoration: underline;
+}
+b{
+	
+}
+h1 {
+    font-size: 1.5rem;
+    padding: 25px 0 10px 0;
+    font-family: $main-font;
+    font-weight: bold;
+}
+h2 {
+    font-size: 1.2rem;
+    font-family: $main-font;
+    font-weight: bold;
+}
+h3 {
+    font-family: $main-font;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.wrapper{
+    max-width:1170px;
+    min-width:300px;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    margin:0 auto; 
+}

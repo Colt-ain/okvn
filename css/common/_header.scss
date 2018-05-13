@@ -1,0 +1,105 @@
+header {
+    background: $header_bg;
+    padding-top: 10px;
+}
+//logo
+.header_logo {
+	width: 100%;
+    max-width: 255px;
+}
+.header-right-block {
+    margin-top: 1.5rem;
+}
+//Phone 
+.header-phone {
+    display: inline-block;
+    height: 37px;
+    text-align: center;
+    margin-left: 1rem;
+    .fa {
+        font-size: 1.2rem;
+        color: $header_phone_icon;
+        -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.85)";
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    a {
+        font-size: 1.125rem;
+        font-weight: bold;
+        color:$header_phone;
+        font-family: $main-font;
+        line-height: 37px;
+    }
+    a:hover {
+        text-decoration:none;
+        color: $header_phone_hover;
+    }
+}
+//Search and social block
+.header-soc-search-block {
+    display: inline-block;
+    vertical-align: top;
+    height: 37px;
+}
+//Search block
+.header-search-block {
+    display: inline-block;
+    vertical-align: bottom;
+}
+.search-input {
+    width: 100%;
+    margin: 0!important;
+    cursor: text;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: $header_search_input_bg;
+    border: 1px solid $header_search_input_border;
+    color: $header_search_input_text;
+    outline-style: none;
+    height: 33px;
+}
+.header-search-icon{
+    width: 35px;
+    height: 33px;
+    display: inline-block;
+    color: $header_search_ico_text;
+    background: $header_search_ico_bg;
+    border: 1px solid $header_search_ico_border;
+    text-align: center;
+    line-height: 30px;
+    font-size: 0.8rem;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.header-search-icon:hover {
+    color: $header_search_ico_hover;
+    background: $header_search_ico_bg_hover;
+    border: 1px solid $header_search_ico_border_hover;
+}
+// header soc style
+.header-soc {
+    display: inline-block;
+}
+.soc-item {
+    width: 35px;
+    height: 33px;
+    display: inline-block;
+    color: $header_soc_text;
+    background: $header_soc_bg;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1rem;
+    border: 1px solid $header_soc_border;
+    vertical-align: top;
+    box-sizing: border-box;
+    &:hover{
+        color: $header_soc_hover;
+        background: $header_soc_bg_hover;
+        border: 1px solid $header_soc_border_hover;
+    }
+}
+.header_menu_block {
+    margin-top: 2rem;
+}

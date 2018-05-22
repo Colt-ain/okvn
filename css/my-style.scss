@@ -1,3 +1,83 @@
-body {
-  border: 10px solid purple;
+
+
+section {
+  border: 1px solid green;
+}
+
+.header {
+  background-image: url("../img/image/bckrd-header.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.navigation  {
+  display: flex;
+  width: 100%;
+}
+
+.navigation nav {
+  background-color: transparent;
+}
+
+li a.nav-link {
+  color: white;
+}
+
+.header-text span {
+  color: white;
+}
+
+.header-text-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.right_food {
+  background-image: url("../img/image/bckrd-one.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.ingredients {
+  background-image: url("../img/image/bckrd-ingredients.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.menu {
+  background-image: url("../img/image/bckrd-menu.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.contact_form {
+  background-image: url("../img/image/bckrd-one.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.footer {
+  background-color: #191919;
+  padding: 50px;
+}
+
+.footer_content {
+  display: flex;
+}
+
+.footer_text_box {
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  /* justify-content: center; */
+  align-items: center;
+  color: white;
+}
+
+.footer_text_box img {
+  width: 200px;
 }

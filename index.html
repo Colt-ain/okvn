@@ -3,80 +3,39 @@
 <!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
 <!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!-->
-<<<<<<< HEAD
+
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-=======
-<html lang="ru">
 <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>TrackAndField</title>
+    <title>Restarant</title>
     <meta name="description" content="" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./_img/style/logo-short.png" />
-    <link rel="stylesheet" href="./fonts/gotham/stylesheet.css">
+    <link rel="shortcut icon" href="img/style/logo-short.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="fonts/gotham/stylesheet.css">
 </head>
 
 
 <body>
-    <link rel="stylesheet" href="css/stylesheet.css" />
-
-    <div id="page">
-        <h1>Ты завел сборку</h1>
-        <span>____________________________________</span>
-        <h2>Тут будет суперский контент</h2>
-    </div>
-        <!--Див для мменю-->
-    <!-- КОНЕЦ MMENU -->
 
 
-    <!--[if lt IE 9]>
-    <script src="js/libs/html5shiv/es5-shim.min.js"></script>
-    <script src="js/libs/html5shiv/html5shiv.min.js"></script>
-    <script src="js/libs/html5shiv/html5shiv-printshiv.min.js"></script>
-    <script src="js/libs/respond/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Подключение JS Билиотек -->
-    <!-- External libraries: jQuery & GreenSock -->
-    <!-- LayerSlider script files -->
-    <script src="js/common.js"></script>
-    <!-- Подключение JS Билиотек -->
-    <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
-    <!-- Google Analytics counter --><!-- /Google Analytics counter -->
-
-
-</body>
-
-<!-- КОНЕЦ ИНИЦИАЛИЗАЦИИ СЛАЙДЕРА -->
->>>>>>> master
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/my-style.scss">
-    <title>Restarant</title>
-  </head>
-   <body>
 
     <section class="header">
       <div class='container'>
-        <div class="row">
-          <div class="navigation">
-            <div class="nav_logo">
-              <a class="navbar-brand" href="#"><img src="img/image/logo.png"></a>
-            </div>
-            <nav class="navbar navbar-expand-xl ">
-             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+          <div class="navigation col-12">
+            <nav class="navbar navbar-expand-xl col-12">
+              <a class="navbar-brand" href="#">
+                <img src="img/style/logo.png">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
              </button>
-             <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
+             <div class="collapse navbar-collapse  " id="navbarNav">
+              <ul class="navbar-nav justify-content-end">
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -93,102 +52,131 @@
                  <a class="nav-link " href="#">Reviews</a>
                </li>
                <li class="nav-item">
-                 <a class="nav-link " href="#">Reservation</a>
+                 <a class="nav-link " href="#">Reservations</a>
                </li>
               </ul>
              </div>
             </nav>
             <div class="header-icon-social">
-              <i class=""></i>
-              <i class=""></i>
-              <i class=""></i>
+              <a href="https://twitter.com/?lang=ru">
+                <img src="img/style/twitter.png" alt="twitter" class="">
+              </a>
+              <a href="https://www.youtube.com/">
+                <img src="img/style/youtube-logo.png"  alt="youtube" class="">
+              </a>
+              <a href="https://web.facebook.com/?_rdc=1&_rdr">
+                <img src="img/style/facebook-letter-logo.png" alt="fb"  class="">
+              </a>
             </div>
           </div>
-        </div>
 
-        <div class="row">
-          <div class="header-text-box">
+          <div class="row">
+          <div class="header-text-box col-12">
             <div class="header-text">
-              <span>the right ingredients
-              for the right food</span>
+
+              <div class="first-row">
+                <span>the right ingredients</span>
+              </div>
+              <div class="second-row">
+                <span>for the right food</span>
+              </div>
             </div>
             <div class="header-img">
-              <img src="img/image/hr-header.png">
+              <img src="img/style/hr-header.png">
             </div>
+
             <div class="header-buttom">
-              <button class="table"></button>
-              <button class="menu"></button>
+              <button class="to-table btn btn-dark btn-lg">BOOK A TABLE</button>
+              <button class="to-menu btn btn-light btn-lg">SEE THE MENU</button>
             </div>
           </div>
         </div>
-     </div>
+      </div>
     </section>
 
     <section class="right_food">
       <div class="container">
-        <div class="right_food_text col-6">
-          <span>Just the right food</span>
-          <img src="img/image/hr-dish.png">
-          <span class="">If you’ve been to one of our restaurants, you’ve seen – and tasted –
+        <div class="right_food_text col-12">
+          <div class="right-food-text-top">
+            <span class="right_food_header justify-content-start">Just the right food</span>
+            <img src="img/style/hr-dish.png">
+          </div>
+          <div class="right_food_descript"> <span>If you’ve been to one of our restaurants, you’ve seen – and tasted –
             what keeps our customers coming back for more. Perfect materials and freshly baked food,
             delicious Lambda cakes,
-             muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</span>
-
+             muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</span></div>
+          <div class="right-food-bottom">
+            <img src="img/style/chef.png">
+         </div>
         </div>
-        <div class="right_food_img col-6">
-            <img src="img/image/dish.png">
+
+        <div class="right_food_img">
+            <img src="img/style/dish.png">
         </div>
       </div>
     </section>
 
     <section class="ingredients">
       <div class="container">
-        <div class="col-12 col-md-6">
-          <div class="ingredients-text">
-            <span>Fine ingredients</span>
-            <img src="img/image/hr-ingredient.png">
-            <span>If you’ve been to one of our restaurants, you’ve seen – and tasted –
+        <div class="row justify-content-end">
+          <div class=" ingredients-box  col-12 col-lg-6">
+
+         <div class="ingredients-text">
+            <span class='ingredients-text-header'>Fine ingredients</span>
+            <img src="img/style/hr-ingredient.png">
+            <span class="ingredients-text-description">If you’ve been to one of our restaurants, you’ve seen – and tasted –
                what keeps our customers coming back for more. Perfect materials and
                freshly baked food, delicious Lambda cakes,
                muffins, and gourmet coffees make us hard to resist!
                 Stop in today and check us out!</span>
-          </div>
-          <div class="ingredients-img">
+           </div>
+
+           <div class="ingredients-img">
             <div class="ingredients-picter">
-              <img src="img/image/ingredient-img-1.png">
+              <img src="img/style/ingredient-img-1.png">
             </div>
             <div class="ingredients-picter">
-              <img src="img/image/ingredient-img-2.png">
+              <img src="img/style/ingredient-img-2.png">
             </div>
             <div class="ingredients-picter">
-              <img src="img/image/ingredient-img-3.png">
+              <img src="img/style/ingredient-img-3.png">
             </div>
-          </div>
-        </div>
+           </div>
+
+         </div>
+       </div>
       </div>
     </section>
 
     <section class="menu">
       <div class="container">
+
         <div class='appetisers col-6'>
-          <span>Appetisers</span>
+
+          <span class='appetisers-header'>Appetisers</span>
+
           <div class="header-img">
-            <img src="img/image/hr-dish.png">
+            <img src="img/style/hr-dish.png">
           </div>
+
           <div class="menu-text-box">
-            Tzatsiki $3.99
+            <div class='menu-header'>
+              <span> Tzatsiki </span>
+              <span> $3.99 </span>
+            </div>
             Refreshing traditional cucumber and garlic yoghurt dip.
             Aubergine_Salad $5.50
             Pureed eggplant, garlic, green pepper and tomato dip.
             Aubergine_Salad $5.25
             Pureed eggplant, garlic, green pepper and tomato dip.
           </div>
+
         </div>
 
         <div class='starters col-6'>
           Starters
           <div class="header-img">
-            <img src="img/image/hr-dish.png">
+            <img src="img/style/hr-dish.png">
           </div>
           Haloumi $3.99
           Refreshing traditional cucumber and garlic yoghurt dip.
@@ -200,7 +188,7 @@
         <div class='salads col-6'>
           Salads
           <div class="header-img">
-            <img src="img/image/hr-dish.png">
+            <img src="img/style/hr-dish.png">
           </div>
           Olive_Special $5.99
           Refreshing traditional cucumber and garlic yoghurt dip
@@ -214,7 +202,7 @@
 
         <div class='main_dishes col-6'>
           Main Dishes
-            <img src="img/image/hr-dish.png">
+            <img src="img/style/hr-dish.png">
 
           Cornish_Mackerel $5.99
           Refreshing traditional cucumber and garlic yoghurt dip.
@@ -232,93 +220,244 @@
       </div>
     </section>
 
-    <section class="guest_reviews">
+    <section class="guest-reviews">
       <div class="container">
-        <div class="guest_reviews_text">
-          <span>Guest Reviews</span>
-            <img src="img/image/hr-ingredient.png">
-          <i class="">
-          <span>If you’ve been to one of our restaurants, you’ve seen – and tasted –
-            what keeps our customers coming back for more. Perfect materials and freshly
-            baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us
-            hard to resist! Stop in today and check us out!</span>
-          <i class="">
-          <br>
-          <span> - food inc, New York</span>
+       <div class='row justify-content-center carousel-box col-12 col-lg-10'>
+        <div class="owl-carousel ">
+
+          <div class="item">
+
+              <div class="guest-reviews-header">
+                <span>Guest Reviews</span>
+                <img src="img/style/hr-ingredient.png">
+              </div>
+
+              <div class="guest-reviews-description">
+                <img src="">
+                <div class="guest-reviews-description-top">
+                  <span >If you’ve been to one of our restaurants, you’ve seen – and tasted –
+                        what keeps our customers coming back for more. Perfect materials and freshly
+                        baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us
+                        hard to resist! Stop in today and check us out!</span>
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+                <div class="guest-reviews-description-bottom">
+                  <span> - food inc, New York</span>
+                </div>
+
+             </div>
+          </div>
+
+          <!-- <div class="item">
+            <div class="guest_reviews_text">
+              <span>Guest Reviews</span>
+                <img src="img/style/hr-ingredient.png">
+              <i class="">
+              <span>If you’ve been to one of our restaurants, you’ve seen – and tasted –
+                what keeps our customers coming back for more. Perfect materials and freshly
+                baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us
+                hard to resist! Stop in today and check us out!</span>
+              <i class="">
+              <br>
+              <span> - food inc, New York</span>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="guest_reviews_text">
+              <span>Guest Reviews</span>
+                <img src="img/style/hr-ingredient.png">
+              <i class="">
+              <span>If you’ve been to one of our restaurants, you’ve seen – and tasted –
+                what keeps our customers coming back for more. Perfect materials and freshly
+                baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us
+                hard to resist! Stop in today and check us out!</span>
+              <i class="">
+              <br>
+              <span> - food inc, New York</span>
+            </div>
+          </div> -->
+
         </div>
       </div>
+     </div>
     </section>
 
-    <section class="contact_form">
+    <section class="contact-form">
       <div class="container">
-        <div class="contact_form_img col-6">
-          <img src="img/image/form-dish.png">
-          <img src="img/image/forma-dish-2.png">
+       <div class='row'>
+
+        <div class="contact-form-img col-7">
+
+          <div class="contact-form-img-box">
+            <img src="img/style/form-dish.png">
+          </div>
+
+          <div class="contact-form-img-box">
+            <img src="img/style/forma-dish-2.png">
+          </div>
+
         </div>
-        <div class="contact_form_text col-6">
-          <span>Just the right food</span>
-          <img src="img/image/hr-dish.png">
-          <span>If you’ve been to one of our restaurants, you’ve seen – and tasted –
-            what keeps our customers coming back for more. Perfect materials and freshly baked
-            food.
-            Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist!
-            Stop in today and check us out! Perfect materials and freshly baked food.</span>
-            <form>
-              <input type="name" placeholder="your name *"  required id="name">
-              <input type="email" placeholder="your email *" required id="email">
-              <input type="date" placeholder="date *" required id="date">
-              <select placeholder="party number" required>
-                <option>one</option>
-                <option>two</option>
-                <option>three</option>
-                <option>four</option>
-                <option>five</option>
-              </select>
-              <button class="book now"></button>
-            </form>
+
+        <div class="contact-form-text col-5">
+           <div class='contact-form-text-header'>
+             <span>Just the right food</span>
+             <img src="img/style/hr-dish.png">
+          </div>
+
+          <div class="contact-form-text-description">
+              <div>
+                <span>If you’ve been to one of our restaurants, you’ve seen – and tasted –
+                what keeps our customers coming back for more. Perfect materials and freshly baked
+                food.</span>
+            </div>
+              <br>
+              <div>
+                <span>Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist!
+                Stop in today and check us out! Perfect materials and freshly baked food.</span>
+              </div>
+          </div>
+
+          <form id="data">
+            <div class="form-first-row">
+              <label for='name'>
+                Name
+                <input class="form-contact" type="name" placeholder="your name *"  required id="name">
+            </label>
+
+            <label for="email">
+              Email
+              <input class="form-contact" type="email" placeholder="your email*"  required id="email">
+            </label>
+
+            </div>
+            <div class="form-second-row">
+              <label for="date">
+                Date
+                <input class="form-contact" type="date" placeholder="date *" required id="date">
+              </label>
+              <label for="party-number">
+                Party-number
+                <select class="form-contact" placeholder="party number" form="data" required id="party-number">
+                  <option>one</option>
+                  <option>two</option>
+                  <option>three</option>
+                  <option>four</option>
+                  <option>five</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="book-now-box col-12">
+              <button class="book-now btn btn-warning"> Book now!</button>
+            </div>
+          </form>
         </div>
+
+       </div>
       </div>
     </section>
 
     <section class="footer">
      <div class="container">
-       <div class='footer_content'>
 
-        <div class="footer_text_box col-12 col-md-4">
-         <div class="footer_text_box">
-           <span class="about_us_text">About Us</span>
-           <img src="img/image/hr-ingredient.png">
-           <span>Lambda's new and expanded Chelsea location represents a truly authentic Greek
+       <div class='footer-content'>
+
+        <div class="footer-text-box col-12 col-md-4">
+         <div class="footer-text-area">
+             <div class="footer-text-box-header">
+               <span>About Us</span>
+               <img class="hr-footer" src="img/style/hr-ingredient.png">
+             </div>
+           <span class="footer-text-box-description">Lambda's new and expanded Chelsea location represents a truly authentic Greek
               patisserie, featuring breakfasts of fresh croissants and steaming bowls of café.
               Lamda the best restaurant in town</span>
          </div>
         </div>
 
-        <div class="footer_text_box col-12 col-md-4">
-          <span class="">Opening Hours</span>
-          <img src="img/image/hr-ingredient.png">
-          <span>Mon-Thu: 7:00am-8:00pm
-              Fri-Sun: 7:00am-10:00pm</span>
-          <div class="footer-icon-card">
+        <div class="footer-tex-box icon-box col-12 col-md-4">
+          <div class="footer-text-area ">
+
+            <div class="footer-text-box-header">
+              <span>Opening Hours</span>
+              <img class="hr-footer" src="img/style/hr-ingredient.png">
+
+            <div class="footer-text-box-description">
+              <span class="footer-text-row"> <b>Mon-Thu:</b> 7:00am-8:00pm </span>
+              <span class="footer-text-row">  <b>Fri-Sun:</b> 7:00am-10:00pm </span>
+            </div>
+          </div>
+            <div class="footer-icon-card">
+              <img src="img/style/american-express.png">
+              <img src="img/style/visa.png">
+              <img src="img/style/mastercard.png">
+              <img src="img/style/paypal-logo-in-rectangular-black-card .png">
+
+            </div>
           </div>
         </div>
 
-        <div class="footer_text_box col-12 col-md-4">
-          <span class="">Our Location</span>
-          <img src="img/image/hr-ingredient.png">
-          <span>19th Paradise Street Sitia
-              128 Meserole Avenue</span>
-          <div class="footer-icon-social">
+        <div class="footer-text-box icon-box col-12 col-md-4">
+          <div class="footer-text-area">
+            <div class="footer-text-box-header icon-box">
+              <span>Our Location</span>
+              <img class="hr-footer" src="img/style/hr-ingredient.png">
+            <div class="footer-text-box-description">
+              <span class="footer-text-row"><b>19th Paradise Street Sitia</b></span>
+              <span class="footer-text-row"><b>128 Meserole Avenue</b></span>
+            </div>
+          </div>
+
+            <div class="footer-icon-social">
+
+              <a href="https://web.facebook.com/?_rdc=1&_rdr">
+                <img src="img/style/facebook-letter-logo-w .png">
+              </a>
+              <a href="https://github.com/">
+                <img src="img/style/github-sign.png">
+              </a>
+              <a href="https://twitter.com/?lang=ru">
+                <img src="img/style/twitter-w.png">
+              </a>
+              <a href="https://www.youtube.com/">
+                <img src="img/style/youtube-logo-w.png">
+              </a>
+            </div>
           </div>
         </div>
+
        </div>
       </div>
     </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="js/common.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-  </body>
+    <!-- <script src="owlcarousel/dist/owl.carousel.min.js"></script>
+    <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      responsive: {
+          0:{
+            items:1
+          },
+          600:{
+            items:1
+          },
+          1000:{
+            items:1
+          }
+        }
+      })
+    </script> -->
+</body>
+
 </html>

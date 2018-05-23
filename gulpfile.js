@@ -49,12 +49,12 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('imagemin', ['copy'], function () {
-  return gulp.src('build/_img/style/**/*.*')
+  return gulp.src('build/img/style/**/*.*')
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true})
     ]))
-    .pipe(gulp.dest('build/_img'));
+    .pipe(gulp.dest('build/img'));
 });
 
 
@@ -67,7 +67,8 @@ gulp.task('copy-html', function () {
 gulp.task('copy', ['copy-html', 'scripts', 'style'], function () {
   return gulp.src([
     'fonts/**/*.*',
-    '_img/style/*.*',
+    'img/style/*.*',
+    'css/*.*',
     'js/**/*.*'
   ], {base: '.'})
     .pipe(gulp.dest('build'));

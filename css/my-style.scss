@@ -36,137 +36,156 @@ $yaseva : normal normal 'Yeseva One';
 $lato: normal normal 'Lato';
 $gentium: normal bold 'GintiumBB';
 $opensansbold: normal bold 'opensansbold';
+$color-text-one: #cc9900;
+$color-text-two: #ffffff;
+
 
 
 .header {
   background-image: url("../img/style/bckrd-header.png");
   background-position: center;
   background-size: cover;
-}
 
-.navigation  {
-  display: flex;
-  width: 100%;
-  height: 110px;
-  justify-content: space-around;
-  position: relative;
-}
 
-.navbar {
-  background-color: transparent;
-}
+     .navigation  {
+        display: flex;
+        width: 100%;
+        height: 110px;
+        justify-content: space-around;
+        position: relative;
 
- .navbar-brand {
-  position: absolute;
-  top: 5%;
-  left: -5%;
-  padding-top: 0;
-}
 
-.navbar-collapse {
+     .navbar {
+        background-color: transparent;
+        }
+
+     .mynavbar-brand {
+        position: absolute;
+        top: -10%;
+        left: -5%;
+        padding-top: 0;
+
+        @media screen and (min-width: 1301px) and (max-width: 1500px) {
+          left: 5%;
+        }
+        @media screen and (min-width: 1200px) and (max-width: 1300px) {
+          left: 10%;
+        }
+        @media screen and (min-width: 992px) and (max-width: 1299px) {
+
+        }
+      }
+
+     .mynavbar-collapse {
+      position: relative;
       display: flex;
       justify-content: space-between;
       height: 110px;
 
-    .navbar-nav {
+        .mynavbar-nav {
+          width: 100%;
+          height: 100%;
+        }
 
-      width: 100%;
-      height: 100%;
-    }
+        .mynav-item {
+          position: relative;
+          margin-left: 30px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          font-family: 'GentiumBB';
+          font-weight: bold;
+          font-style: normal;
+          font-size: 21px;
+          color: white;
+          height: 100%;
+          }
 
-    .nav-item {
-      margin-left: 30px;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      font: $gentium;
-      font-size: 21px;
-      color: white;
-      height: 100%;
+        .mynav-item:hover::before {
+          position: absolute;
+          top: 0;
+          content: "";
+          height: 3px;
+          width: 100%;
+          background-color: $color-text-two;
+          opacity: 0.85;
+          transition: 400ms;
+        }
+
+        .mynav-item a {
+          text-decoration: none;
+          color: inherit;
+        }
+
+        }
+        .myheader-icon-social {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 39%;
+        left: 98%;
+        @media screen and (max-width: 1200px) {
+          top: 39%;
+          left: 97%;
+          }
+        }
       }
 
-    .nav-item:hover {
-      font-weight: bold;
-    }
 
-    .nav-item:hover::before {
-      content: " ";
-      height: 5px;
-      width: 100%;
-      top: 10%;
-      background-color: #ffffff;
-      opacity: 0;
-      transition: 400ms;
-    }
+     .myheader-text-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 140px 0 145px 0;
+        }
 
-    .nav-item a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    }
-
-
-.header-text-box {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 140px 0 145px 0;
-  // justify-content: space-between;
-}
-
-.header-text span {
-  color: white;
-  font: $yaseva;
-  font-size: 90px;
-
-}
-
-.header-text .second-row {
-  text-align: center;
-}
-
-.header-img {
-  margin: 20px 0 30px 0;
-}
-
-.header-buttom {
-  display: flex;
-  // flex-direction: column
-  align-items: center;
-
-  .to-table,
-  .to-menu {
-    font-size: 18px;
-    border: 1px solid;
-    border-radius: 0;
-    width: 230px 55px;
-    padding: 15px 40px;
-
-  }
-    .to-table{
-      margin-right: 30px;
-      border-color: black;
-      background-color: rgba(0, 0, 0 , 0.5)
-    }
-
-      .to-menu {
-        margin-left: 30px;
-        border-color: white;
-        background-color: rgba(255, 255, 255, 0.5)
+     .header-text span {
+        color: white;
+        font-family: 'Yeseva One';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 90px;
       }
-}
 
-.header-icon-social {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: absolute;
-  top: 40%;
-  left: 100%
-}
+     .header-text .second-row {
+        text-align: center;
+      }
 
+     .header-img {
+        margin: 20px 0 30px 0;
+        }
+
+     .header-buttom {
+        display: flex;
+        align-items: center;
+
+          .to-table,
+          .to-menu {
+            font-family: 'Lato';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 18px;
+            border: 1px solid;
+            border-radius: 0;
+            width: 230px 55px;
+            padding: 15px 40px;
+            }
+
+          .to-table{
+            margin-right: 30px;
+            border-color: black;
+            background-color: rgba(0, 0, 0 , 0.5)
+          }
+
+            .to-menu {
+              margin-left: 30px;
+              border-color: white;
+              background-color: rgba(255, 255, 255, 0.5)
+            }
+        }
+    }
 
 .right_food {
   background-image: url("../img/style/bckrd-one.png");
@@ -174,51 +193,80 @@ $opensansbold: normal bold 'opensansbold';
   background-size: cover;
   padding: 105px 0 115px 0;
   position: relative;
-}
 
-.right_food_text {
-  display: flex;
-  flex-direction: column;
 
-}
-
-.right-food-text-top {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  }
-
-.right_food_header {
-  font-size: 36px;
-  color: #cc9900;
-}
-
-.right_food_descript {
-  display: flex;
-  // flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 0 50px 0;
-    span {
-      font-size: 16px;
-      padding: 0 35% 0 20%;
-      text-align: center;
+      .right_food_text {
+        display: flex;
+        flex-direction: column;
       }
-}
 
+      .right-food-text-top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        }
 
-.right-food-bottom {
-  margin-left: 5%;
-}
+      .right_food_header {
+        font-size: 36px;
+        color: $color-text-one;
 
+        @media screen and (max-width: 576px){
+          font-size: 24px;
+          }
+        }
 
-.right_food_img {
-  position: absolute;
-  top: 10%;
-  right: 5%;
-}
+      .right_food_descript {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 30px 0 50px 0;
+          span {
+            font-size: 16px;
+            padding: 0 37% 0 21%;
+            text-align: center;
+            @media screen and (max-width: 576px){
+              font-size: 14px;
+              padding:  0;
+              }
+          }
+          @media screen and (max-width: 576px){
+            // padding:  0;
+            }
+        }
 
+      .right-food-bottom {
+          margin-left: 5%;
+        }
+
+      .right_food_img {
+          position: absolute;
+          top: -20%;
+          right: -5%;
+
+          @media screen and (max-width: 993px) and (max-width: 1200px) {
+            width: 85%;
+            height: 85%;
+             right: 0;
+           }
+           @media screen and (max-width: 992px) {
+             width: 65%;
+             height: 75%;
+             top: 5%;
+             right: -5%;
+            }
+            @media screen and (max-width: 768px) {
+              width: 55%;
+              height: 60%;
+              top: 5%;
+              right: 0%;
+             }
+             @media screen and (max-width: 576px){
+               display: none;
+               }
+
+           }
+  }
 
 .ingredients {
   background-image: url("../img/style/bckrd-ingredients.png");
@@ -234,13 +282,16 @@ $opensansbold: normal bold 'opensansbold';
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    // width: 630px;
     height: 555px;
     padding: 80px 80px 75px  80px;
     background-color: rgba( 0, 0, 0, 0.5);
 
+    @media screen and (max-width: 576px) {
+    padding: 40px 40px 45px  40px;
+    }
+
     .ingredients-text {
-      color: #ffffff;
+      color: $color-text-two;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -253,28 +304,111 @@ $opensansbold: normal bold 'opensansbold';
          font-size: 16px;
        }
 
-        img {
-         padding: 30px 0 20px 0;
-       }
+
     }
 
-    .ingredients-img {
-      display: flex;
-      justify-content: space-between;
-      padding-top: 70px;
-      width: 100%;
+      .ingredients-img {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 70px;
+        width: 100%;
 
+      @media screen and (max-width: 576px) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      img {
+        padding: 30px 0 20px 0;
+        @media screen and (max-width: 576px) {
+          width: 85%;
+        }
+      }
 
     }
   }
 }
 
-
 .menu {
   background-image: url("../img/style/bckrd-menu.png");
   background-position: center;
   background-size: cover;
-}
+  padding: 105px 0;
+  color: $color-text-one;
+
+  .menu-container {
+    position: relative;
+
+    .menu-row-one ,
+    .menu-row-two{
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+
+  .menu-header-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Yeseva One';
+     font-weight: normal;
+     font-style: normal;
+     font-size: 36px;
+  }
+
+
+  .menu-text-box {
+    padding-left: 0;
+
+     li {
+       list-style-type: none;
+       margin: 20px 0 ;
+       padding: 0 10px;
+
+       .menu-first-row {
+       display: flex;
+       justify-content: space-between;
+       border-bottom: 1px solid $color-text-one;
+      font-family: 'Yeseva One';
+       font-weight: normal;
+       font-style: normal;
+       font-size: 21px;
+       padding: 10px 0;
+       margin-bottom:  10px ;
+     }
+
+     .menu-sab {
+       font-family: 'Lato';
+       font-weight: normal;
+       font-style: normal;
+       font-size: 16px;
+     }
+
+    }
+
+    .special {
+            position: relative;
+            border: 1px solid $color-text-one;
+          }
+
+    .special:before {
+              content:"Special";
+              color: $color-text-two;
+              background-color: $color-text-one;
+              position: absolute;
+              top: -25%;
+              right: 0;
+              width: 69px;
+              height: 22px;
+              padding: 0 10px;
+              font-family: 'Lato';
+              font-weight: normal;
+              font-style: normal;
+              font-size: 14px;
+            }
+         }
+      }
 
 .guest-reviews {
   background-image: url("../img/style/bckrd-review.png");
@@ -283,11 +417,14 @@ $opensansbold: normal bold 'opensansbold';
   padding: 100px 0;
 
   .carousel-box {
+    display: flex;
+    justify-content: center;
     border: 1px solid black;
     background-color: rgba(0, 0, 0, 0.5);
-    // margin: 0 50px 0 50px;
 
-    .owl-carousel {
+
+
+    .myowl-carousel {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -299,48 +436,45 @@ $opensansbold: normal bold 'opensansbold';
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: white;
+        color: $color-text-two;
         line-height: 1.5;
 
-        .guest-reviews-text {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-
-          }
-
-        .guest-reviews-header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-              span {
-                font-size: 36px;
-                }
-            }
-
-          .guest-reviews-description {
+            .guest-reviews-text {
               display: flex;
-              position: relative;
+              flex-direction: column;
+              align-items: center;
+              }
+
+            .guest-reviews-header {
+              display: flex;
               flex-direction: column;
               align-items: center;
 
-            .guest-reviews-description-top{
-              font-size: 25px;
-              text-align: left;
-              padding: 0 10px;
-            }
+                span {
+                  font-size: 36px;
+                  }
+              }
 
-            .guest-reviews-description-bottom {
-              font-size: 18px;
-            }
-         }
+            .guest-reviews-description {
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                align-items: center;
 
+                .guest-reviews-description-top {
+                  font-size: 25px;
+                  text-align: left;
+                  padding: 0 10px;
+                }
+
+                .guest-reviews-description-bottom {
+                  font-size: 18px;
+                 }
+               }
+          }
         }
        }
-      }
-
-    }
+     }
 
 .contact-form {
   display: flex;
@@ -361,33 +495,44 @@ $opensansbold: normal bold 'opensansbold';
               width: 270px;
               height: 100%;
           }
+
+          @media screen and (max-width: 1200px) {
+            width: 250px;
+            margin-right: 30px;
+
+            img {
+                  width: 250px;
+                  height: 100%;
+              }
+          }
+          @media screen and (max-width: 992px) {
+            display:  none;
+
+          }
         }
-
-
     }
 
     .contact-form-text {
       display: flex;
       flex-direction: column;
-      // align-items: center;
+
+
 
       .contact-form-text-header {
         display: flex;
         flex-direction: column;
         align-items: center;
         font-size: 36px;
-        color: #c90;
+        color: $color-text-one;
       }
 
       .contact-form-text-description {
         text-align: center;
         padding: 50px 0;
-
       }
 
       form {
         display: flex;
-
         flex-direction: column;
 
       .form-first-row ,
@@ -398,14 +543,28 @@ $opensansbold: normal bold 'opensansbold';
 
       .form-first-row {
         margin-bottom: 15px;
-        }
+      }
 
-        .form-contact {
-          width: 180px;
+      .form-contact,
+      #party-number {
+        width: 180px;
+        height: 30px;
+
+        @media screen and (min-width: 576px) and (max-width: 767px) {
+          width: 350px;
+          height: 50px;
         }
+      }
+
 
         label {
-          color:#c90;
+          position: relative;
+          color:$color-text-one;
+          .img-calendar {
+            position: absolute;
+            top: 45%;
+            right: 5%;
+          }
         }
 
         label .form-contact {
@@ -414,9 +573,7 @@ $opensansbold: normal bold 'opensansbold';
           border: 1px solid #c8c6c6;
           }
 
-        #party-number {
-          height: 30px;
-        }
+
 
         .book-now-box {
           display: flex;
@@ -434,9 +591,77 @@ $opensansbold: normal bold 'opensansbold';
           background-color: #c9a131;
           }
         }
+
+        @media screen and (max-width: 992px) {
+
+            background-color: rgba(0, 0, 0, 0.15);
+            padding: 50px;
+            .contact-form-text-header {
+              font-size: 46px;
+              color: $color-text-one;
+            }
+            .contact-form-text-description {
+              text-align: center;
+              padding: 10px 0;
+              color: $color-text-one;
+              font-size: 18px;
+              font-weight: bold;
+            }
+
+            form {
+
+            .form-first-row {
+              margin-bottom: 15px;
+              }
+
+
+                .form-contact {
+                  width: 250px;
+                  height: 50px;
+
+                }
+
+
+              label {
+                position: relative;
+                color:$color-text-one;
+                .img-calendar {
+                  position: absolute;
+                  top: 45%;
+                  right: 5%;
+                }
+              }
+
+              label .form-contact {
+                display: block;
+                vertical-align: middle;
+                border: 1px solid #c8c6c6;
+                }
+
+              #party-number {
+                height: 50px;
+              }
+
+              .book-now-box {
+                display: flex;
+                justify-content: center;
+                margin-top: 35px;
+              }
+
+              .book-now {
+                width: 200px;
+                height: 35px;
+                font-size: 16px;
+                color: white;
+                border-radius: 0;
+                border-color: #c9a131;
+                background-color: #c9a131;
+                }
+              }
+
+          }
       }
     }
-
 
 
 
@@ -449,6 +674,9 @@ $opensansbold: normal bold 'opensansbold';
 
     .footer-content {
       display: flex;
+        @media screen and (max-width: 767px) {
+          flex-direction: column;
+        }
       }
 
       .footer-text-area {
@@ -457,7 +685,7 @@ $opensansbold: normal bold 'opensansbold';
            flex-direction: column;
            align-items: center;
            justify-content: space-between;
-           color: white;
+           color: $color-text-two;
            text-align: center;
 
 
@@ -482,17 +710,67 @@ $opensansbold: normal bold 'opensansbold';
             }
           }
 
-
-
-
-          // .icon-box {
-          //   align-items: space-between;
-          //   justify-content: space-between;
-          // }
-
         .hr-footer {
             width: 200px;
             margin: 15px 0;
           }
+          @media screen and (max-width: 767px) {
+           margin-top: 20px;
+          }
    }
+  }
+
+.modal-window-chef {
+  background-image: url("../img/style/bckrd-header.png");
+  background-position: center;
+  background-size: cover;
+  color: $color-text-two;
+
+    .mymodal-header {
+      text-align: center;
+    }
+
+    .my-modal-tittle {
+      font-family: 'Lato';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 36px
+
+
+    }
+
+    .my-modal-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      font-family: 'GentiumBB';
+      font-weight: normal;
+      font-style: normal;
+
+      .img-modal {
+        display: flex;
+        justify-content: center;
+      }
+
+      .text-modal {
+       text-align: left;
+      }
+    }
+
+    .my-button {
+      width: 100px;
+      border: 1px solid white;
+      background-color: rgba(250, 250, 250, 0.7);
+    }
+  }
+
+.modal-window-ingredient {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: $color-text-two;
+
+    .img-modal {
+      display: flex;
+      justify-content: center;
+    }
   }

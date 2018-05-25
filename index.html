@@ -14,50 +14,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/style/logo-short.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/stylesheet.css" />
     <link rel="stylesheet" href="fonts/gotham/stylesheet.css">
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
 </head>
 
 
 <body>
+  <script src="js/owl.carousel.js"></script>
 
 
 
-    <section class="header">
+    <section class="header" id="header">
       <div class='container'>
 
           <div class="navigation col-12">
-            <nav class="navbar navbar-expand-xl col-12">
-              <a class="navbar-brand" href="#">
+            <nav class="navbar navbar-expand-lg col-12">
+              <a class="navbar-brand mynavbar-brand" href="#">
                 <img src="img/style/logo.png">
               </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-             </button>
-             <div class="collapse navbar-collapse  " id="navbarNav">
-              <ul class="navbar-nav justify-content-end">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Ingredients</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link " href="#">Menu</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link " href="#">Reviews</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link " href="#">Reservations</a>
-               </li>
-              </ul>
+              <button class="navbar-toggler" type="button" data-toggle="collapse"
+               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+               aria-expanded='false' aria-label='Toggle navigation'>
+                 <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse mynavbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mynavbar-nav mr-auto justify-content-end">
+                  <li class="nav-item mynav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item mynav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item mynav-item">
+                    <a class="nav-link" href="#ingredients">Ingredients</a>
+                 </li>
+                 <li class="nav-item mynav-item">
+                   <a class="nav-link " href="#menu">Menu</a>
+                 </li>
+                 <li class="nav-item mynav-item">
+                   <a class="nav-link " href="#guest-review">Reviews</a>
+                 </li>
+                 <li class="nav-item mynav-item">
+                   <a class="nav-link " href="#contact-form">Reservations</a>
+                 </li>
+                </ul>
+
              </div>
             </nav>
-            <div class="header-icon-social">
+
+            <div class="header-icon-social myheader-icon-social">
               <a href="https://twitter.com/?lang=ru">
                 <img src="img/style/twitter.png" alt="twitter" class="">
               </a>
@@ -68,10 +75,11 @@
                 <img src="img/style/facebook-letter-logo.png" alt="fb"  class="">
               </a>
             </div>
+
           </div>
 
           <div class="row">
-          <div class="header-text-box col-12">
+          <div class="header-text-box myheader-text-box col-12">
             <div class="header-text">
 
               <div class="first-row">
@@ -86,15 +94,19 @@
             </div>
 
             <div class="header-buttom">
-              <button class="to-table btn btn-dark btn-lg">BOOK A TABLE</button>
-              <button class="to-menu btn btn-light btn-lg">SEE THE MENU</button>
+              <a href="#contact-form">
+                <button class="to-table btn btn-dark btn-lg">BOOK A TABLE</button>
+              </a>
+              <a href="#menu">
+                <button class="to-menu btn btn-light btn-lg">SEE THE MENU</button>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="right_food">
+    <section class="right_food" id="right_food">
       <div class="container">
         <div class="right_food_text col-12">
           <div class="right-food-text-top">
@@ -106,17 +118,19 @@
             delicious Lambda cakes,
              muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</span></div>
           <div class="right-food-bottom">
-            <img src="img/style/chef.png">
+          <a href="#" data-toggle="modal" data-target="#ChefModal">
+              <img src="img/style/dish.png">
+          </a>
+          <!-- <div class="right_food_img"> -->
+            <img class="right_food_img" src="img/style/chef.png">
+          <!-- </div> -->
          </div>
         </div>
 
-        <div class="right_food_img">
-            <img src="img/style/dish.png">
-        </div>
       </div>
-    </section>
+     </section>
 
-    <section class="ingredients">
+    <section class="ingredients" id="ingredients">
       <div class="container">
         <div class="row justify-content-end">
           <div class=" ingredients-box  col-12 col-lg-6">
@@ -132,15 +146,21 @@
            </div>
 
            <div class="ingredients-img">
-            <div class="ingredients-picter">
-              <img src="img/style/ingredient-img-1.png">
-            </div>
-            <div class="ingredients-picter">
-              <img src="img/style/ingredient-img-2.png">
-            </div>
-            <div class="ingredients-picter">
-              <img src="img/style/ingredient-img-3.png">
-            </div>
+              <div class="ingredients-picter">
+                <a href="#" data-toggle="modal" data-target="#WheatModal">
+                  <img src="img/style/ingredient-img-1.png">
+                </a>
+              </div>
+              <div class="ingredients-picter">
+                <a href="#" data-toggle="modal" data-target="#PepperModal">
+                  <img src="img/style/ingredient-img-2.png">
+                </a>
+              </div>
+              <div class="ingredients-picter">
+                <a href="#" data-toggle="modal" data-target="#BreadModal">
+                  <img src="img/style/ingredient-img-3.png">
+                </a>
+              </div>
            </div>
 
          </div>
@@ -148,82 +168,113 @@
       </div>
     </section>
 
-    <section class="menu">
-      <div class="container">
+    <section class="menu" id="menu">
+       <div class="container menu-container">
+        <div class="row menu-row-one">
 
-        <div class='appetisers col-6'>
-
-          <span class='appetisers-header'>Appetisers</span>
-
-          <div class="header-img">
-            <img src="img/style/hr-dish.png">
+         <div class='appetisers col-5 align-self-start '>
+          <div class="menu-header-img">
+              <span class='appetisers-header'>Appetisers</span>
+              <img src="img/style/hr-dish.png">
           </div>
 
-          <div class="menu-text-box">
-            <div class='menu-header'>
-              <span> Tzatsiki </span>
-              <span> $3.99 </span>
+          <ul class="menu-text-box">
+              <li>
+                <div class="menu-first-row"> <span> Tzatsiki </span><span> $3.99 </span></div>
+                <span class='menu-sab'>Refreshing traditional cucumber and garlic yoghurt dip.</span>
+              </li>
+              <li>
+                <div class="menu-first-row"> <span>Aubergine Salad</span> <span>$5.50</span></div>
+                <span class='menu-sab'>Pureed eggplant, garlic, green pepper and tomato dip.</span>
+              </li>
+
+              <li>
+                <div class="menu-first-row"> <span>Aubergine Salad</span><span>$5.25</span></div>
+                <span class='menu-sab'>  Pureed eggplant, garlic, green pepper and tomato dip.</span>
+              </li>
+          </ul>
+          </div>
+         <div class='starters col-5 align-self-start'>
+          <div class="menu-header-img">
+              <span class='appetisers-header'>Starters</span>
+                <img src="img/style/hr-dish.png">
+          </div>
+
+            <ul class="menu-text-box">
+              <li>
+                <div class="menu-first-row"> <span> Haloumi  </span><span> $3.99 </span></div>
+                <span class='menu-sab'>  Refreshing traditional cucumber and garlic yoghurt dip.</span>
+              </li>
+              <li>
+                <div class="menu-first-row"> <span>Spinach Pie</span> <span>$5.50</span></div>
+                <span class='menu-sab'>Pureed eggplant, garlic, green pepper and tomato dip.</span>
+              </li>
+
+            </ul>
+
+           </div>
+        </div>
+        <div class="row menu-row-two">
+          <div class='salads col-5 align-self-end'>
+            <div class="menu-header-img">
+                <span class='appetisers-header'>Salads</span>
+                <img src="img/style/hr-dish.png">
             </div>
-            Refreshing traditional cucumber and garlic yoghurt dip.
-            Aubergine_Salad $5.50
-            Pureed eggplant, garlic, green pepper and tomato dip.
-            Aubergine_Salad $5.25
-            Pureed eggplant, garlic, green pepper and tomato dip.
+
+            <ul class="menu-text-box">
+              <li>
+                <div class="menu-first-row"> <span>   Olive Special </span><span> $5.99  </span></div>
+                <span class='menu-sab'>   Refreshing traditional cucumber and garlic yoghurt dip</span>
+              </li>
+
+              <li class="special">
+                <div class="menu-first-row"> <span>Greek Salad </span> <span>$5.50</span></div>
+                <span class='menu-sab'>Pureed eggplant, garlic, green pepper and tomato dip</span>
+              </li>
+
+              <li>
+                <div class="menu-first-row"> <span>Gusto Salad </span> <span>$5.25</span></div>
+                <span class='menu-sab'>  Pureed eggplant, garlic, green pepper and tomato dip.</span>
+              </li>
+
+              </ul>
+           </div>
+          <div class='main-dishes col-5 align-self-start'>
+           <div class="menu-header-img">
+              <span class='appetisers-header'> Main Dishes</span>
+                <img src="img/style/hr-dish.png">
+           </div>
+
+            <ul class="menu-text-box">
+              <li>
+                <div class="menu-first-row"> <span>Cornish Mackerel </span><span> $5.99  </span></div>
+                <span class='menu-sab'>Refreshing traditional cucumber and garlic yoghurt dip.</span>
+              </li>
+              <li class='special'>
+                <div class="menu-first-row"> <span>  Roast Lamb </span> <span>$5.50</span></div>
+                <span class='menu-sab'>Pureed eggplant, garlic, green pepper and tomato dip.</span>
+              </li>
+              <li>
+                <div class="menu-first-row"> <span>Fried Chicken </span> <span>$5.25</span></div>
+                <span class='menu-sab'>  Pureed eggplant, garlic, green pepper and tomato dip.</span>
+              </li>
+              <li>
+                <div class="menu-first-row"> <span>  Pastitsio </span> <span>$5.99</span></div>
+                <span class='menu-sab'>  Pureed eggplant, garlic, green pepper and tomato dip.</span>
+              </li>
+            </ul>
           </div>
-
         </div>
-
-        <div class='starters col-6'>
-          Starters
-          <div class="header-img">
-            <img src="img/style/hr-dish.png">
-          </div>
-          Haloumi $3.99
-          Refreshing traditional cucumber and garlic yoghurt dip.
-
-          Spinach_Pie $5.50
-          .Pureed eggplant, garlic, green pepper and tomato dip.
         </div>
-
-        <div class='salads col-6'>
-          Salads
-          <div class="header-img">
-            <img src="img/style/hr-dish.png">
-          </div>
-          Olive_Special $5.99
-          Refreshing traditional cucumber and garlic yoghurt dip
-
-          Greek_Salad $5.50
-          .Pureed eggplant, garlic, green pepper and tomato dip
-
-          Gusto_Salad $5.25
-          Pureed eggplant, garlic, green pepper and tomato dip.
-        </div>
-
-        <div class='main_dishes col-6'>
-          Main Dishes
-            <img src="img/style/hr-dish.png">
-
-          Cornish_Mackerel $5.99
-          Refreshing traditional cucumber and garlic yoghurt dip.
-
-          Roast_Lamb $5.50
-          .Pureed eggplant, garlic, green pepper and tomato dip.
-
-          Fried_Chicken $5.25
-          Pureed eggplant, garlic, green pepper and tomato dip.
-
-          Pastitsio $5.99
-          Refreshing traditional cucumber and garlic yoghurt dip.
-
-        </div>
+       </div>
       </div>
-    </section>
+    </div>
+      </section>
 
     <section class="guest-reviews">
       <div class="container">
-       <div class='row justify-content-center carousel-box col-12 col-lg-10'>
-        <div class="owl-carousel ">
+       <div class='row  carousel-box col-12 '>
+        <div class="owl-carousel myowl-carousel">
 
           <div class="item">
 
@@ -287,13 +338,13 @@
      </div>
     </section>
 
-    <section class="contact-form">
+   <section class="contact-form" id="contact-form">
       <div class="container">
        <div class='row'>
 
-        <div class="contact-form-img col-7">
+        <div class="contact-form-img col-lg-7">
 
-          <div class="contact-form-img-box">
+          <div class="contact-form-img-box first-box">
             <img src="img/style/form-dish.png">
           </div>
 
@@ -303,7 +354,7 @@
 
         </div>
 
-        <div class="contact-form-text col-5">
+        <div class="contact-form-text col-12 col-lg-5">
            <div class='contact-form-text-header'>
              <span>Just the right food</span>
              <img src="img/style/hr-dish.png">
@@ -323,33 +374,47 @@
           </div>
 
           <form id="data">
-            <div class="form-first-row">
-              <label for='name'>
-                Name
-                <input class="form-contact" type="name" placeholder="your name *"  required id="name">
-            </label>
+            <div class="form-first-row row">
+                <div class='col-12 col-md-6'>
+                  <label for='name'>
+                    Name
+                    <input  class="form-contact" type="name" placeholder="  your name *"  required id="name">
+                  </label>
+                </div>
 
-            <label for="email">
-              Email
-              <input class="form-contact" type="email" placeholder="your email*"  required id="email">
-            </label>
-
+                <div class='col-12 col-md-6'>
+                  <label for="email">
+                    Email
+                    <input class="form-contact" type="email" placeholder="  your email *"  required id="email">
+                  </label>
+              </div>
             </div>
-            <div class="form-second-row">
-              <label for="date">
-                Date
-                <input class="form-contact" type="date" placeholder="date *" required id="date">
-              </label>
-              <label for="party-number">
-                Party-number
-                <select class="form-contact" placeholder="party number" form="data" required id="party-number">
-                  <option>one</option>
-                  <option>two</option>
-                  <option>three</option>
-                  <option>four</option>
-                  <option>five</option>
-                </select>
-              </label>
+
+            <div class="form-second-row row">
+              <div class='col-12 col-md-6'>
+                <label for="date">
+                  Date
+                  <input class="form-contact" type="date" placeholder="  date *" min="2018-05-29" required id="date">
+                  <div class='img-calendar'>
+                    <img src="img/style/calendar.png">
+                  </div>
+                </label>
+              </div>
+
+
+              <div class='col-12 col-md-6'>
+                <label for="party-number">
+                  Party-number
+                  <select class="form-contact" placeholder="" form="data" required id="party-number">
+                      <option selected disabled>party number</option>
+                      <option>one</option>
+                      <option>two</option>
+                      <option>three</option>
+                      <option>four</option>
+                      <option>five</option>
+                    </select>
+                </label>
+             </div>
             </div>
 
             <div class="book-now-box col-12">
@@ -362,7 +427,7 @@
       </div>
     </section>
 
-    <section class="footer">
+    <section class="footer" id="about">
      <div class="container">
 
        <div class='footer-content'>
@@ -435,29 +500,171 @@
     </section>
 
 
+  <!-- Modal windows  -->
+
+  <!--Modal chef  -->
+  <div class="modal fade " id="ChefModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content  modal-window-chef">
+        <div class="modal-header mymodal-header">
+          <h5 class="modal-title my-modal-tittle" id="ChefModalTitle">Our Chef</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          </div>
+          <div class="modal-body my-modal-body ">
+
+            <div class='img-modal'>
+              <img src="img/style/ivlev.jpg" alt="chef">
+            </div>
+            <div class='text-modal '>
+              <span>Very cool and loud chef. Invested in dumb places and leads them
+                    in a decent appearance.All this removes and sells as a show.
+                  <br>
+                    He studied at the vocational school № 19 on the specialty cook. In the restaurant business since 1993.
+                  <br>
+                    Since 1997, he worked as a chef at restaurants such as Reporter, Luciano, Nostalgia, VIP-21, Boulevard, In Vino, Poison,
+                    L'Etranger, Zebra Square, GQ-bar, Sheraton Palace Hotel ", Parus, the brand-chief of the company Ginza Project.
+                  <br>
+                    Konstantin Ivlev passed professional training at the Vatel school in France, at the Edsbaka Krog restaurant, which was awarded 2 stars in the Michelin guide (Sweden),
+                    at the Beef Institute (USA), at the Arzak restaurant of Juan Maria Arzac, awarded 3 stars in the guide Michelin (Spain)</span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn my-button" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+    </div>
+  </div>
+
+<!--Modal ingredients  -->
+  <div class="modal fade" id="WheatModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content   modal-window-ingredient">
+        <div class="modal-header mymodal-header">
+          <h5 class="modal-title my-modal-tittle" id="WheatModalTitle">Wheat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body my-modal-body ">
+
+            <div class='img-modal'>
+              <img src="img/style/ingredient-img-1.png" alt="chef">
+            </div>
+            <div class='text-modal '>
+              <span> Wheat is a grass widely cultivated for its seed, a cereal grain which is a worldwide staple food.[1][2][3] The many species of wheat together make up the genus Triticum; the most widely grown is common wheat (T. aestivum).
+                    The archaeological record suggests that wheat was first cultivated in the regions of the Fertile Crescent around 9600 BCE. Botanically, the wheat kernel is a type of fruit called a caryopsis.Wheat is grown on more land area than any other food crop (220.4 million hectares, 2014).[4] World trade in wheat is greater than for all other crops combined.[5] In 2016, world production of wheat was 749 million tonnes,[6] making it the second most-produced cereal after maize.[6][7] Since 1960, world production of wheat and other grain crops has tripled and is expected to grow further through the middle of the 21st century.[8] Global demand for wheat is increasing due to the unique viscoelastic and adhesive properties of gluten proteins, which facilitate the production of processed foods, whose consumption is increasing as a result of the worldwide industrialization process and the westernization of the diet.[9][10]
+                    Wheat is an important source of carbohydrates.[9] Globally, it is the leading source of vegetal protein in human food, having a protein content of about 13%, which is relatively high compared to other major cereals [11] but relatively low in protein quality for supplying essential amino acids.[12][13] When eaten as the whole grain, wheat is a source of multiple nutrients and dietary fiber.[9]
+                    In a small part of the general population, gluten – the major part of wheat protein – can trigger coeliac disease, noncoeliac gluten sensitivity, gluten ataxia, and dermatitis herpetiformis.[14]</span>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn my-button" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="PepperModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content  modal-window-ingredient">
+        <div class="modal-header mymodal-header">
+          <h5 class="modal-title my-modal-tittle" id="PepperModaTitle">Pepper</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body my-modal-body ">
+
+            <div class='img-modal'>
+              <img src="img/style/ingredient-img-2.png" alt="chef">
+            </div>
+            <div class='text-modal '>
+              <span> Black pepper (Piper nigrum) is a flowering vine in the family Piperaceae, cultivated for its fruit which is usually dried and used
+                 as a spice and seasoning, known as a peppercorn. When fresh and fully mature, it is approximately 5 millimetres (0.20 in) in diameter and dark red,
+                and contains a single seed like all drupes. Peppercorns and the ground pepper derived from them may be described simply as pepper, or more precisely
+                as black pepper (cooked and dried unripe fruit), green pepper (dried unripe fruit), and white pepper (ripe fruit seeds).
+                Black pepper is native to south India and is extensively cultivated there and elsewhere in tropical regions. Currently, Vietnam is the world's largest
+                producer and exporter of pepper, producing 34% of the world's Piper nigrum crop as of 2013.
+                Dried ground pepper has been used since antiquity both for its flavour and as a traditional medicine.
+                 Black pepper is the world's most traded spice and is one of the most common spices added to cuisines around
+                  the world. Its spiciness is due to the chemical piperine, not to be confused with the capsaicin characteristic of
+                  chili peppers. It is ubiquitous in the modern world as a seasoning and is often paired with salt.</span>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn my-button" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="BreadModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content  modal-window-ingredient">
+        <div class="modal-header mymodal-header">
+          <h5 class="modal-title my-modal-tittle" id="PepperModaTitle">Bread</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body my-modal-body ">
+
+            <div class='img-modal'>
+              <img src="img/style/ingredient-img-3.png" alt="chef">
+            </div>
+            <div class='text-modal '>
+              <span> Bread is a staple food prepared from a dough of flour and water, usually by baking. Throughout recorded
+                history it has been popular around the world and is one of the oldest artificial foods, having been of importance since
+                the dawn of agriculture.Proportions of types of flour and other ingredients vary widely, as do modes of preparation.
+                As a result, types, shapes, sizes, and textures of breads differ around the world. Bread may be
+                 leavened by processes such as reliance on naturally occurring sourdough microbes, chemicals, industrially produced yeast
+                 ,or high-pressure aeration. Some bread is cooked before it can leaven, including for traditional or religious reasons. Non-cereal ingredients such as fruits, nuts and fats may be included. Commercial
+                 bread commonly contains additives to improve flavor, texture, color, shelf life, nutrition, and ease of manufacturing.Bread is served in various forms with any meal of the day. It is eaten as a snack, and used as an ingredient in other culinary preparations, such as sandwiches, and fried items coated in bread crumbs to prevent sticking. It forms the bland main component of bread pudding, as well as of stuffings designed to fill cavities or retain juices that otherwise might drip out.Bread has a social and emotional significance beyond its importance as nourishment. It plays essential roles in religious rituals and secular culture. Its prominence in daily life is reflected in language, where it appears in proverbs, colloquial expressions ("He stole the bread from my mouth"), in prayer ("Give us this day our daily bread") and in the etymology of words, such as "companion" (from Latin com "with" + panis "bread")</span>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn my-button" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
     <script src="js/common.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- <script src="owlcarousel/dist/owl.carousel.min.js"></script>
+
     <script>
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: false,
-      responsive: {
-          0:{
-            items:1
-          },
-          600:{
-            items:1
-          },
-          1000:{
-            items:1
+            $(document).ready(function(){
+
+
+            $('.myowl-carousel').owlCarousel();
+            loop: true,
+            nav: false,
+            responsive: {
+                0:{
+                  items:1
+                },
+                600:{
+                  items:1
+                },
+                1000:{
+                  items:1
+                }
+              }
+            })
           }
-        }
-      })
+
+
+      // });
     </script> -->
+
 </body>
 
 </html>

@@ -13,15 +13,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/style/logo-short.png" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+     integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="fonts/gotham/stylesheet.css">
-    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <!-- <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" /> -->
     <link rel="stylesheet" href="css/stylesheet.css" />
 </head>
 
 
 <body>
-  <script src="js/owl.carousel.js"></script>
+  <!-- <script src="js/owl.carousel.js"></script> -->
 
 
 
@@ -40,7 +41,7 @@
               </button>
 
               <div class="collapse navbar-collapse mynavbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mynavbar-nav mr-auto justify-content-end">
+                <ul class="navbar-nav mynavbar-nav mr-auto justify-content-center">
                   <li class="nav-item mynav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                   </li>
@@ -110,7 +111,7 @@
       <div class="container">
         <div class="right_food_text col-12">
           <div class="right-food-text-top">
-            <span class="right_food_header justify-content-start">Just the right food</span>
+            <span class="right_food_header ">Just the right food</span>
             <img src="img/style/hr-dish.png">
           </div>
           <div class="right_food_descript"> <span>If you’ve been to one of our restaurants, you’ve seen – and tasted –
@@ -170,9 +171,10 @@
 
     <section class="menu" id="menu">
        <div class="container menu-container">
-        <div class="row menu-row-one">
+        <div class='row menu-box'>
+         <div class=" menu-row-one col-12 col-md-5">
 
-         <div class='appetisers col-5 align-self-start '>
+         <div class='appetisers'>
           <div class="menu-header-img">
               <span class='appetisers-header'>Appetisers</span>
               <img src="img/style/hr-dish.png">
@@ -194,28 +196,7 @@
               </li>
           </ul>
           </div>
-         <div class='starters col-5 align-self-start'>
-          <div class="menu-header-img">
-              <span class='appetisers-header'>Starters</span>
-                <img src="img/style/hr-dish.png">
-          </div>
-
-            <ul class="menu-text-box">
-              <li>
-                <div class="menu-first-row"> <span> Haloumi  </span><span> $3.99 </span></div>
-                <span class='menu-sab'>  Refreshing traditional cucumber and garlic yoghurt dip.</span>
-              </li>
-              <li>
-                <div class="menu-first-row"> <span>Spinach Pie</span> <span>$5.50</span></div>
-                <span class='menu-sab'>Pureed eggplant, garlic, green pepper and tomato dip.</span>
-              </li>
-
-            </ul>
-
-           </div>
-        </div>
-        <div class="row menu-row-two">
-          <div class='salads col-5 align-self-end'>
+          <div class='salads'>
             <div class="menu-header-img">
                 <span class='appetisers-header'>Salads</span>
                 <img src="img/style/hr-dish.png">
@@ -238,8 +219,28 @@
               </li>
 
               </ul>
+            </div>
            </div>
-          <div class='main-dishes col-5 align-self-start'>
+           <div class=" menu-row-two col-12 col-md-5">
+              <div class='starters'>
+                <div class="menu-header-img">
+                  <span class='appetisers-header'>Starters</span>
+                  <img src="img/style/hr-dish.png">
+                </div>
+
+                <ul class="menu-text-box">
+                  <li>
+                    <div class="menu-first-row"> <span> Haloumi  </span><span> $3.99 </span></div>
+                    <span class='menu-sab'>  Refreshing traditional cucumber and garlic yoghurt dip.</span>
+                  </li>
+                  <li>
+                    <div class="menu-first-row"> <span>Spinach Pie</span> <span>$5.50</span></div>
+                    <span class='menu-sab'>Pureed eggplant, garlic, green pepper and tomato dip.</span>
+                  </li>
+                </ul>
+
+               </div>
+              <div class='main-dishes'>
            <div class="menu-header-img">
               <span class='appetisers-header'> Main Dishes</span>
                 <img src="img/style/hr-dish.png">
@@ -264,81 +265,41 @@
               </li>
             </ul>
           </div>
-        </div>
-        </div>
-       </div>
+           </div>
       </div>
-    </div>
-      </section>
+     </div>
+     </section>
 
     <section class="guest-reviews">
       <div class="container">
-       <div class='row  carousel-box col-12 '>
-        <div class="owl-carousel myowl-carousel">
-
-          <div class="item">
-
+        <div class="row myrow">
+          <div class="myowl-carousel col-10">
               <div class="guest-reviews-header">
                 <span>Guest Reviews</span>
                 <img src="img/style/hr-ingredient.png">
               </div>
 
               <div class="guest-reviews-description">
-                <img src="">
+                <img src="img/style/quotes.png">
                 <div class="guest-reviews-description-top">
                   <span >If you’ve been to one of our restaurants, you’ve seen – and tasted –
                         what keeps our customers coming back for more. Perfect materials and freshly
                         baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us
                         hard to resist! Stop in today and check us out!</span>
                 </div>
-
                 <br>
                 <br>
                 <br>
-
                 <div class="guest-reviews-description-bottom">
                   <span> - food inc, New York</span>
                 </div>
-
              </div>
-          </div>
-
-          <!-- <div class="item">
-            <div class="guest_reviews_text">
-              <span>Guest Reviews</span>
-                <img src="img/style/hr-ingredient.png">
-              <i class="">
-              <span>If you’ve been to one of our restaurants, you’ve seen – and tasted –
-                what keeps our customers coming back for more. Perfect materials and freshly
-                baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us
-                hard to resist! Stop in today and check us out!</span>
-              <i class="">
-              <br>
-              <span> - food inc, New York</span>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="guest_reviews_text">
-              <span>Guest Reviews</span>
-                <img src="img/style/hr-ingredient.png">
-              <i class="">
-              <span>If you’ve been to one of our restaurants, you’ve seen – and tasted –
-                what keeps our customers coming back for more. Perfect materials and freshly
-                baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us
-                hard to resist! Stop in today and check us out!</span>
-              <i class="">
-              <br>
-              <span> - food inc, New York</span>
-            </div>
-          </div> -->
-
         </div>
       </div>
      </div>
     </section>
 
-   <section class="contact-form" id="contact-form">
+    <section class="contact-form" id="contact-form">
       <div class="container">
        <div class='row'>
 
@@ -375,25 +336,25 @@
 
           <form id="data">
             <div class="form-first-row row">
-                <div class='col-12 col-md-6'>
+                <div class='col-12 col-sm-6'>
                   <label for='name'>
-                    Name
-                    <input  class="form-contact" type="name" placeholder="  your name *"  required id="name">
+                    <span>Name</span>
+                    <input  class="form-contact active" type="name" placeholder="  your name *"  required id="name">
                   </label>
                 </div>
 
-                <div class='col-12 col-md-6'>
+                <div class='col-12 col-sm-6'>
                   <label for="email">
-                    Email
+                    <span>Email</span>
                     <input class="form-contact" type="email" placeholder="  your email *"  required id="email">
                   </label>
               </div>
             </div>
 
             <div class="form-second-row row">
-              <div class='col-12 col-md-6'>
+              <div class='col-12 col-sm-6'>
                 <label for="date">
-                  Date
+                  <span>Date</span>
                   <input class="form-contact" type="date" placeholder="  date *" min="2018-05-29" required id="date">
                   <div class='img-calendar'>
                     <img src="img/style/calendar.png">
@@ -402,11 +363,11 @@
               </div>
 
 
-              <div class='col-12 col-md-6'>
+              <div class='col-12 col-sm-6'>
                 <label for="party-number">
-                  Party-number
+                  <span class="text-number">Party-number</span>
                   <select class="form-contact" placeholder="" form="data" required id="party-number">
-                      <option selected disabled>party number</option>
+                      <option selected disabled>party number *</option>
                       <option>one</option>
                       <option>two</option>
                       <option>three</option>
@@ -640,7 +601,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-    <script>
+    <!-- <script>
             $(document).ready(function(){
 
 
@@ -663,7 +624,7 @@
 
 
       // });
-    </script> -->
+    </script> --> -->
 
 </body>
 

@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/style/logo-short.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-     integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="fonts/gotham/stylesheet.css">
     <!-- <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" /> -->
     <link rel="stylesheet" href="css/stylesheet.css" />
@@ -22,21 +22,17 @@
 
 
 <body>
-  <!-- <script src="js/owl.carousel.js"></script> -->
-
-
 
     <section class="header" id="header">
       <div class='container'>
 
           <div class="navigation col-12">
-            <nav class="navbar navbar-expand-lg col-12">
+            <nav class="navbar navbar-expand-lg navbar-light col-12">
               <a class="navbar-brand mynavbar-brand" href="#">
                 <img src="img/style/logo.png">
               </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse"
-               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-               aria-expanded='false' aria-label='Toggle navigation'>
+              <button class="navbar-toggler mynav-button" type="button" data-toggle="collapse"
+                      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="navbar-toggler-icon"></span>
               </button>
 
@@ -303,7 +299,7 @@
       <div class="container">
        <div class='row'>
 
-        <div class="contact-form-img col-lg-7">
+        <div class="contact-form-img col-md-7">
 
           <div class="contact-form-img-box first-box">
             <img src="img/style/form-dish.png">
@@ -334,54 +330,52 @@
               </div>
           </div>
 
-          <form id="data">
-            <div class="form-first-row row">
-                <div class='col-12 col-sm-6'>
-                  <label for='name'>
-                    <span>Name</span>
-                    <input  class="form-contact active" type="name" placeholder="  your name *"  required id="name">
+            <form id="data">
+              <div class="form-first-row form-row">
+                  <div class='col-12 col-lg-6'>
+                    <label for='name'>
+                      <span>Name</span>
+                      <input  class="form-contact active" type="name" placeholder="  your name *"  required id="name">
+                    </label>
+                  </div>
+
+                  <div class='col-12 col-lg-6'>
+                    <label for="email">
+                      <span>Email</span>
+                      <input class="form-contact" type="email" placeholder="  your email *"  required id="email">
+                    </label>
+                </div>
+
+                <div class='col-12 col-lg-6'>
+                  <label for="date">
+                    <span>Date</span>
+                    <input class="form-contact" type="date" placeholder="  date *" min="2018-05-29" required id="date">
+                    <div class='img-calendar'>
+                      <img src="img/style/calendar.png">
+                    </div>
                   </label>
                 </div>
 
-                <div class='col-12 col-sm-6'>
-                  <label for="email">
-                    <span>Email</span>
-                    <input class="form-contact" type="email" placeholder="  your email *"  required id="email">
+
+                <div class='col-12 col-lg-6'>
+                  <label for="party-number">
+                    <span class="text-number">Party-number</span>
+                    <select class="form-contact" placeholder="" form="data" required id="party-number">
+                        <option selected disabled>party number *</option>
+                        <option>one</option>
+                        <option>two</option>
+                        <option>three</option>
+                        <option>four</option>
+                        <option>five</option>
+                      </select>
                   </label>
-              </div>
-            </div>
-
-            <div class="form-second-row row">
-              <div class='col-12 col-sm-6'>
-                <label for="date">
-                  <span>Date</span>
-                  <input class="form-contact" type="date" placeholder="  date *" min="2018-05-29" required id="date">
-                  <div class='img-calendar'>
-                    <img src="img/style/calendar.png">
-                  </div>
-                </label>
+               </div>
               </div>
 
-
-              <div class='col-12 col-sm-6'>
-                <label for="party-number">
-                  <span class="text-number">Party-number</span>
-                  <select class="form-contact" placeholder="" form="data" required id="party-number">
-                      <option selected disabled>party number *</option>
-                      <option>one</option>
-                      <option>two</option>
-                      <option>three</option>
-                      <option>four</option>
-                      <option>five</option>
-                    </select>
-                </label>
-             </div>
-            </div>
-
-            <div class="book-now-box col-12">
-              <button class="book-now btn btn-warning"> Book now!</button>
-            </div>
-          </form>
+              <div class="book-now-box col-12">
+                <button class="book-now btn btn-warning"> Book now!</button>
+              </div>
+            </form>
         </div>
 
        </div>
